@@ -1,13 +1,11 @@
-import Link from "next/link";
+import classes from "./app.module.css";
+import Banner from "./svgviewer-output.svg";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Hello World! This is the Home page</p>
-      <p>
-        Visit the <Link href="/about">About</Link> page.
-      </p>
+    <div className={classes.container}>
+      <Banner />
+      <h1 className={classes.title}>Coming Soon!</h1>
     </div>
   );
 };
